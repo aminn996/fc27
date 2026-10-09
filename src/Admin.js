@@ -237,6 +237,8 @@ function Dashboard({ token, onLogout }) {
                   <th>Client</th>
                   <th>Téléphone</th>
                   <th>Gouvernorat</th>
+                  <th>Adresse complète</th>
+                  <th>Note complémentaire</th>
                   <th>Produit</th>
                   <th>Qté</th>
                   <th>Total</th>
@@ -254,6 +256,8 @@ function Dashboard({ token, onLogout }) {
                       <td className="customer-cell">{order.customer_name}</td>
                       <td className="phone-cell">{order.phone}</td>
                       <td>{order.governorate}</td>
+                      <td className="address-cell">{order.address}</td>
+                      <td className="note-cell">{order.note || '—'}</td>
                       <td className="product-cell">{item?.product_slug?.replace('fc27-', '').toUpperCase() || '—'}</td>
                       <td>{item?.quantity || 1}</td>
                       <td className="price-cell">{formatPrice(order.total)}</td>

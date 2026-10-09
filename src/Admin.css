@@ -334,6 +334,21 @@
   font-size: 11px;
 }
 
+.orders-table .address-cell,
+.orders-table .note-cell {
+  min-width: 180px;
+  max-width: 280px;
+  color: #aab5c5;
+  line-height: 1.45;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.orders-table .note-cell {
+  color: #8b95a5;
+  font-style: italic;
+}
+
 .orders-table .product-cell {
   font-weight: 600;
   color: #aab5c5;
